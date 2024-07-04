@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@layer utilities {
+  html {
+    scrollbar-width: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-chillax);
+  }
+  
+  h1{
+    font-weight: 500;
+  }
+  p, span {
+    font-family: var(--font-satoshi);
+    letter-spacing: 0.03rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-label{
+    @apply font-semibold text-base text-primary-blue;
+  }
+
+
+}
+
+@layer components {
+  /* section */
+  .home-page{
+    @apply mb-28;
+  }
+
+  .overlay {
+    @apply absolute w-full h-full inset-0 bg-blend-darken; 
+  }
+
+  .description{
+    @apply font-satoshi tracking-wider leading-6 text-base font-normal text-primary-blue;
+  }
+
+  .btn-round{
+    @apply px-5 lg:px-10 py-2 rounded-[80px] border-[1px];
+  }
+
+}
