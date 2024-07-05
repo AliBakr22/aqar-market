@@ -9,7 +9,7 @@ import DeveloperCards from "@/components/shared/cards/DeveloperCards";
 const NewProjects = () => {
   const renderCardBody = (property, link) => {
     return (
-      <Link href={"/project"}>
+      <Link href={"/projects"}>
         <>
           {property?.property_type && (
             <div className="overlay p-6 bg-transparent">
